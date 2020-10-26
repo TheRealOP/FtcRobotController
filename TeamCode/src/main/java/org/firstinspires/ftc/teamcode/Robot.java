@@ -3,10 +3,15 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
+import org.firstinspires.ftc.teamcode.autos.Methods;
+
 public class Robot {
 
-    //Declaring DT motors
+    // Declaring DT motors
     DcMotor leftFront, rightFront, leftBack, rightBack;
+
+    // Declare Method object?
+    Methods methods;
 
     // Hardware map??
     HardwareMap hardMap;
@@ -25,7 +30,7 @@ public class Robot {
         leftBack.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         rightBack.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-        
+
 
     }
 
