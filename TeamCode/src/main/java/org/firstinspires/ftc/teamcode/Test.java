@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import org.firstinspires.ftc.teamcode.Robot;
 
-@Autonomous(name = "autoTest",group = "autos")
+@Autonomous(name = "autoTest2",group = "autos")
 
 public class Test extends LinearOpMode {
 

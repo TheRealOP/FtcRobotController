@@ -4,7 +4,7 @@ import com.arcrobotics.ftclib.drivebase.MecanumDrive;
 import com.arcrobotics.ftclib.hardware.motors.Motor;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
-import com.sun.tools.corba.se.idl.constExpr.ShiftRight;
+//import com.sun.tools.corba.se.idl.constExpr.ShiftRight;
 
 import org.firstinspires.ftc.teamcode.autos.Methods;
 
@@ -39,11 +39,14 @@ public class Robot {
 
         dt = new MecanumDrive(leftFront,rightFront,leftBack,rightBack);
 
-        leftFront.setPositionCoefficient(0.05);
-        rightFront.setPositionCoefficient(0.05);
-        leftBack.setPositionCoefficient(0.05);
-        rightBack.setPositionCoefficient(0.05);
+        {
+            leftFront.setPositionCoefficient(0.05);
+            rightFront.setPositionCoefficient(0.05);
+            leftBack.setPositionCoefficient(0.05);
+            rightBack.setPositionCoefficient(0.05);
+        }
 
+        dt.driveRobotCentric(.5 ,.5,.5);
 
 
 

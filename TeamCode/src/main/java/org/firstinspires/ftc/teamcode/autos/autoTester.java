@@ -1,3 +1,4 @@
+
 package org.firstinspires.ftc.teamcode.autos;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -6,7 +7,7 @@ import org.firstinspires.ftc.teamcode.Robot;
 
 @Autonomous(name = "autoTest",group = "autos")
 
-public class autoTest extends LinearOpMode {
+public class autoTester extends LinearOpMode {
 
     Robot robot = new Robot();
     @Override
@@ -17,3 +18,5 @@ public class autoTest extends LinearOpMode {
         }
     }
 }
+
+
