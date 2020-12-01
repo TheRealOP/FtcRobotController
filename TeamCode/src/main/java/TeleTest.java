@@ -27,9 +27,19 @@ public class TeleTest extends OpMode {
     public void loop() {
         leftWheelPower = -gamepad1.left_stick_y;
         rightWheelPower = -gamepad1.right_stick_y;
+
         leftFront.setPower(leftWheelPower);
         leftBack.setPower(leftWheelPower);
         rightFront.setPower(rightWheelPower);
         rightBack.setPower(rightWheelPower);
+
+        double strafePower;
+
+        strafePower = (gamepad1.left_stick_x+gamepad1.right_stick_x)/2;
+
+        leftFront.setPower(strafePower);
+        leftBack.setPower(-strafePower);
+        rightFront.setPower(-strafePower);
+        rightBack.setPower(strafePower);
     }
 }
