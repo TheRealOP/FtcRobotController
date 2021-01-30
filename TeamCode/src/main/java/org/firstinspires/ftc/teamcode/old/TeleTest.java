@@ -1,5 +1,5 @@
+package org.firstinspires.ftc.teamcode.old;
 
-import com.arcrobotics.ftclib.hardware.motors.Motor;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -33,13 +33,19 @@ public class TeleTest extends OpMode {
         rightFront.setPower(rightWheelPower);
         rightBack.setPower(rightWheelPower);
 
+        double strafePowerRight;
+        double strafePowerLeft;
         double strafePower;
 
-        strafePower = (gamepad1.left_stick_x+gamepad1.right_stick_x)/2;
+        strafePowerRight = (gamepad1.right_trigger);
+        strafePowerLeft = (-gamepad1.left_trigger);
+        strafePower = strafePowerLeft + strafePowerRight;
 
         leftFront.setPower(strafePower);
         leftBack.setPower(-strafePower);
         rightFront.setPower(-strafePower);
         rightBack.setPower(strafePower);
+
+
     }
 }
